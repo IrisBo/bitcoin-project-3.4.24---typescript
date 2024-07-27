@@ -1,0 +1,196 @@
+.parallax {
+  height: 100vh;
+  background-image: url("/images/white-bitcoin-cryptocurrency-coin-against-grey.avif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body {
+  display: inline;
+}
+
+.Page-headline {
+  color: rgb(230, 225, 225);
+  font-size: 3em;
+  text-shadow: 2px 2px 0 #444, 3px 3px 0 #666, 4px 4px 0 #888;
+  transform: rotateX(0 deg) rotateY(10deg);
+}
+
+.top-header {
+  display: flex;
+  color: rgb(122, 122, 122);
+}
+
+#display-area {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.more-info-btn,
+.delete-btn {
+  position: absolute;
+  bottom: 10px; /* Increase space from the bottom */
+  left: 10px;   /* Increase space from the left */
+  padding: 0.5rem 1rem; /* Increase padding for a more comfortable click area */
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners */
+  font-size: 14px; /* Increase font size for better readability */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.more-info-btn {
+  background-color: #007bff; /* Bootstrap primary blue color */
+  color: #fff; /* White text */
+}
+
+.more-info-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Bootstrap danger red color */
+  color: #fff; /* White text */
+}
+
+.delete-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+.display-in-chart-button,
+.save-button {
+  display: inline-flex; /* Change from position: flex to display: inline-flex */
+  margin-left: 10px;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding: 0.5rem 1rem; /* Increase padding for a more comfortable click area */
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners */
+  font-size: 14px; /* Increase font size for better readability */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.display-in-chart-button {
+  background-color: #28a745; /* Bootstrap success green color */
+  color: #fff; /* White text */
+}
+
+.display-in-chart-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.save-button {
+  background-color: #ffc107; /* Bootstrap warning yellow color */
+  color: #000; /* Black text for contrast */
+}
+
+.save-button:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+ .remove-from-list{
+  position: absolute;
+  left:400px;
+  color: #e74c3c; /* Use a modern red color */
+  background-color: #fff; /* White background for contrast */
+  border: 1px solid #e74c3c; /* Border color to match the text */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 14px; 
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+  height: 20px;
+}
+
+.remove-from-list:hover {
+  background-color: #e74c3c; 
+  color: #fff; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.remove-from-list:active {
+  background-color: #c0392b; 
+  border-color: #c0392b; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.form-switch {
+  position: absolute;
+  bottom: 5px;
+  right: 2px;
+}
+
+.card {
+  width: 160px; 
+  height: inherit;
+  margin: 10px; 
+  vertical-align: top; 
+  display: flexbox;
+  min-height: 160px;
+  color: black;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(78, 77, 77, 0.7);
+}
+.search-input,.search-button{
+  box-shadow: 0 4px  8px rgba(78, 77, 77, 0.7);
+  border-radius: 2px;
+}
+
+.subtitle {
+  color: rgb(0, 0, 0);
+}
+
+.about-area {
+  height: 100vh;
+}
+.my-image {
+  width: 30%;
+  height: auto;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* left: 0;
+  top: 0; */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal-content {
+  background-image: url("/images/white-bitcoin-cryptocurrency-coin-against-grey.avif");
+  background-size: cover;
+  background-position: center;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Set a percentage width to make it smaller */
+  max-width: 600px; /* Set a maximum width to avoid too large modals */
+  border-radius: 10px; /* Add rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #c0392b;
+  text-decoration: none;
+  cursor: pointer;
+}
